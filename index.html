@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Water Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Water Flow Management System</h1>
+  <div id="app">
+    <!-- tank div-->
+    <div class="container tank">
+      <div class="box" style="width:460px;border: 1px solid black;">
+        <h5>tank</h5>
+        <input type="text" v-model="tank">
+      </div>
+    </div>
+    <!-- tank div close-->
+
+    <!-- colonies div-->
+    <div class="container colonies">
+      <div class="pipes">
+        <div class="box">
+          <div class="vtLine" id="col1"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="col2"></div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="box">
+          <h5>colony 1</h5>
+          <input type="text" v-model="col1">
+        </div>
+        <div class="box">
+          <h5>colony 2</h5>
+          <input type="text" v-model="col2">
+        </div>
+      </div>
+    </div>
+    <!-- colonies div closed-->
+
+    <!-- street div-->
+    <div class="container streets" style="text-align:center;">
+      <div class="pipes">
+        <div class="box">
+          <div class="vtLine" id="street1"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="street2"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="street3"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="street4"></div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="box">
+          <h5>street 1</h5>
+          <input type="text" v-model="street1">
+        </div>
+        <div class="box">
+          <h5>street 2</h5>
+          <input type="text" v-model="street2">
+        </div>
+        <div class="box">
+          <h5>street 3</h5>
+          <input type="text" v-model="street3">
+        </div>
+        <div class="box">
+          <h5>street 4</h5>
+          <input type="text" v-model="street4">
+        </div>
+      </div>
+    </div>
+    <!-- street div closed-->
+
+    <!-- house div-->
+    <div class="container houses">
+      <div class="pipes">
+        <div class="box">
+          <div class="vtLine" id="house1"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house2"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house3"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house4"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house5"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house6"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house7"></div>
+        </div>
+        <div class="box">
+          <div class="vtLine" id="house8"></div>
+        </div>
+      </div>
+      <div class="fields">
+        <div class="box">
+          <h5>house 1</h5>
+          <input type="text" v-model="house1">
+        </div>
+        <div class="box">
+          <h5>house 2</h5>
+          <input type="text" v-model="house2">
+        </div>
+        <div class="box">
+          <h5>house 3</h5>
+          <input type="text" v-model="house3">
+        </div>
+        <div class="box">
+          <h5>house 4</h5>
+          <input type="text" v-model="house4">
+        </div>
+        <div class="box">
+          <h5>house 5</h5>
+          <input type="text" v-model="house5">
+        </div>
+        <div class="box">
+          <h5>house 6</h5>
+          <input type="text" v-model="house6">
+        </div>
+        <div class="box">
+          <h5>house 7</h5>
+          <input type="text" v-model="house7">
+        </div>
+        <div class="box">
+          <h5>house 8</h5>
+          <input type="text" v-model="house8">
+        </div>
+
+      </div>
+    </div>
+    <!-- house div closed-->
+
+
+    <div style="text-align:center;margin:10px;">
+      <button type="button" v-on:click="findError">check</button>
+    </div>
+  </div>
+
+
+
+  <script src="vue.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

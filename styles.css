@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1{
+  text-align: center;
+  padding: 5px;
+  color: green;
+  font-family:cursive;
+}
+
+.container{
+  width: 63%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 70px;
+  background-color: lightblue;
+}
+
+input[type="text"]{
+  text-align: center;
+  border: 1px solid grey;
+  width: 80%;
+  margin-top: 10px;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+.vtLine {
+  display: inline-block;
+  height: 70px;
+  width: 4px;
+  margin: 0px auto;
+  background-color: green;
+}
+
+.pipes .box {
+  background-color: white;
+}
+
+.fields {
+  margin-top: -5px;
+}
+
+.fields .box {
+  border: 1px solid black;
+}
+
+.streets .box {
+  text-align: center;
+  width: 150px;
+  margin: 0px 20px 0px 25px;
+}
+
+.colonies .box {
+  text-align: center;
+  width: 250px;
+  margin: 0px 60px 0px 80px;
+}
