@@ -14,7 +14,7 @@
     <div class="container tank">
       <div class="box" style="width:460px;border: 1px solid black;">
         <h5>tank</h5>
-        <input type="text" v-model="tank">
+        <input type="text" v-model="tank"><span style="font-weight: bold;"> ltrs</span>
       </div>
     </div>
     <!-- tank div close-->
@@ -32,11 +32,11 @@
       <div class="fields">
         <div class="box">
           <h5>colony 1</h5>
-          <input type="text" v-model="col1">
+          <input type="text" v-model="col1"><span style="font-weight: bold;"> ltrs</span>
         </div>
         <div class="box">
           <h5>colony 2</h5>
-          <input type="text" v-model="col2">
+          <input type="text" v-model="col2"><span style="font-weight: bold;"> ltrs</span>
         </div>
       </div>
     </div>
@@ -145,11 +145,24 @@
     </div>
     <!-- house div closed-->
 
-
     <div style="text-align:center;margin:10px;">
       <button type="button" v-on:click="findError">check</button>
     </div>
-  </div>
+
+    <div class="container" id="complaints">
+      <h2 style="text-align:center;">Complaint box :</h2>
+      <div class="center1">
+        <ol>
+          <li v-for="complaint in complaints">
+            {{complaint}}
+          </li>
+        </ol>
+      </div>
+    </div>
+
+
+
+  </div><!--app close -->
 
 
 
